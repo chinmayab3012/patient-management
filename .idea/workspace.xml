@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="79332b26-3d4b-4ffa-a5e5-916d2f2bfc03" name="Changes" comment="22-07 localstack setup">
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics-service/src/test/java/com/pm/analyticsservice/AnalyticsServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/cdk.out/cdk.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/cdk.out/localstack.template.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/cdk.out/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/cdk.out/tree.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/pm/stack/LocalStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/target/classes/com/pm/stack/LocalStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/grpc/BillingServiceGrpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/grpc/BillingServiceGrpcClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chinmay-abhyankar&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/chinmay-abhyankar/patient-management.git&quot;,
+    &quot;accountId&quot;: &quot;8286e29c-b12a-4ece-867c-15f68548829c&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/infrastructure/pom.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2zr7T9X8nxhRK9c6IC40pLUJkh2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LocalStack.executor": "Run",
+    "Application.NotificationMedicineApplication.executor": "Run",
+    "Docker.analytics-service.executor": "Run",
+    "Docker.api-gateway.executor": "Run",
+    "Docker.auth-service-db.executor": "Run",
+    "Docker.auth-service.executor": "Run",
+    "Docker.billing-service-db.executor": "Run",
+    "Docker.billing-service.executor": "Run",
+    "Docker.grafana.executor": "Run",
+    "Docker.kafka-ui.executor": "Run",
+    "Docker.kafka.executor": "Run",
+    "Docker.notification-o-service.executor": "Run",
+    "Docker.notification-service.executor": "Run",
+    "Docker.order-medcine-service.executor": "Run",
+    "Docker.patient-service-db.executor": "Run",
+    "Docker.patient-service.executor": "Run",
+    "Docker.prometheus.executor": "Run",
+    "Docker.redis.executor": "Run",
+    "JUnit.PatientIntegrationTest.shouldReturn429AfterLimitExceeded.executor": "Run",
+    "JUnit.PatientIntegrationTest.shouldReturnPatientsWithValidToken.executor": "Run",
+    "Maven.analytics-service [clean].executor": "Run",
+    "Maven.analytics-service [compile].executor": "Run",
+    "Maven.billing-service [clean].executor": "Run",
+    "Maven.billing-service [compile].executor": "Run",
+    "Maven.patient-service [compile].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/patient-management/notification-o-service",
+    "onboarding.tips.debug.path": "D:/patient-management/infrastructure/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "terminal"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\patient-management\notification-o-service" />
+      <recent name="D:\patient-management\order-medicine-service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\patient-management\patient-service\src\main\java\com\pm\patientservice\kafka" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.patient-service">
+    <configuration name="NotificationMedicineApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.notification.service.NotificationMedicineApplication" />
+      <module name="notification-o-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.notification.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <shortenClasspath name="ARGS_FILE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientIntegrationTest.shouldReturn429AfterLimitExceeded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="integration-tests" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PatientIntegrationTest" />
+      <option name="METHOD_NAME" value="shouldReturn429AfterLimitExceeded" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientIntegrationTest.shouldReturnPatientsWithValidToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="integration-tests" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PatientIntegrationTest" />
+      <option name="METHOD_NAME" value="shouldReturnPatientsWithValidToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Java Scratch" nameIsGenerated="true">
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="billing-service-db" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="postgres:13-alpine" />
+          <option name="containerName" value="billing-service-db" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_DB" />
+                <option name="value" value="billing-service-db" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_USER" />
+                <option name="value" value="admin" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="5432" />
+                <option name="hostPort" value="5002" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="/var/lib/postgresql/data" />
+                <option name="hostPath" value="D:\learning\patient-management\db_volume\billing-service" />
+              </DockerVolumeBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.LocalStack" />
+      <item itemvalue="Application.NotificationMedicineApplication" />
+      <item itemvalue="Docker.order-medcine-service" />
+      <item itemvalue="Docker.notification-service" />
+      <item itemvalue="Docker.analytics-service" />
+      <item itemvalue="Docker.api-gateway" />
+      <item itemvalue="Docker.auth-service" />
+      <item itemvalue="Docker.redis" />
+      <item itemvalue="Docker.auth-service-db" />
+      <item itemvalue="Docker.billing-service" />
+      <item itemvalue="Docker.kafka" />
+      <item itemvalue="Docker.kafka-ui" />
+      <item itemvalue="Docker.patient-service" />
+      <item itemvalue="Docker.prometheus" />
+      <item itemvalue="Docker.grafana" />
+      <item itemvalue="Docker.patient-service-db" />
+      <item itemvalue="Docker.billing-service-db" />
+      <item itemvalue="Docker.pgadmin" />
+      <item itemvalue="Java Scratch.Unnamed" />
+      <item itemvalue="JUnit.PatientIntegrationTest.shouldReturn429AfterLimitExceeded" />
+      <item itemvalue="JUnit.PatientIntegrationTest.shouldReturnPatientsWithValidToken" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NotificationMedicineApplication" />
+        <item itemvalue="JUnit.PatientIntegrationTest.shouldReturn429AfterLimitExceeded" />
+        <item itemvalue="JUnit.PatientIntegrationTest.shouldReturnPatientsWithValidToken" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79332b26-3d4b-4ffa-a5e5-916d2f2bfc03" name="Changes" comment="" />
+      <created>1752477343768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752477343768</updated>
+    </task>
+    <task id="LOCAL-00001" summary="14-07 rate limiting">
+      <option name="closed" value="true" />
+      <created>1752491996947</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752491996947</updated>
+    </task>
+    <task id="LOCAL-00002" summary="16-07 circuit breaker">
+      <option name="closed" value="true" />
+      <created>1752666050077</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752666050077</updated>
+    </task>
+    <task id="LOCAL-00003" summary="18-07 prometheus and grafana">
+      <option name="closed" value="true" />
+      <created>1752823189126</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752823189127</updated>
+    </task>
+    <task id="LOCAL-00004" summary="21-07 stream api">
+      <option name="closed" value="true" />
+      <created>1753169910422</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1753169910422</updated>
+    </task>
+    <task id="LOCAL-00005" summary="22-07 localstack setup">
+      <option name="closed" value="true" />
+      <created>1753188338128</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753188338128</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="PATH" value="C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;D:\aws\AWSCLIV2\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Docker\Docker\resources\bin;D:\Microsoft VS Code\bin;D:\node; " />
+    </envs>
+    <option name="passParentEnvs" value="false" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="14-07 rate limiting" />
+    <MESSAGE value="16-07 circuit breaker" />
+    <MESSAGE value="18-07 prometheus and grafana" />
+    <MESSAGE value="21-07 stream api" />
+    <MESSAGE value="22-07 localstack setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="22-07 localstack setup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/infrastructure/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
