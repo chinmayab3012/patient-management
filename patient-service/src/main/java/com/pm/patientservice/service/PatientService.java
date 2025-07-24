@@ -7,7 +7,6 @@ import com.pm.patientservice.exception.EmailAlreadyExistsException;
 import com.pm.patientservice.exception.PatientNotFoundException;
 import com.pm.patientservice.grpc.BillingServiceGrpcClient;
 import com.pm.patientservice.kafka.KafkaProducer;
-import com.pm.patientservice.kafka.StreamKafkaProducer;
 import com.pm.patientservice.mapper.PatientMapper;
 import com.pm.patientservice.model.Patient;
 import com.pm.patientservice.repository.PatientRepository;
@@ -49,14 +48,13 @@ public class PatientService {
     private final PatientRepository patientRepository;
     private final BillingServiceGrpcClient billingServiceGrpcClient;
     private  final KafkaProducer kafkaProducer;
-    private final StreamKafkaProducer streamKafkaProducer;
+    //private final StreamKafkaProducer streamKafkaProducer;
 
-    PatientService(PatientRepository patientRepository, BillingServiceGrpcClient billingServiceGrpcClient,KafkaProducer kafkaProducer
-    ,StreamKafkaProducer streamKafkaProducer) {
+    PatientService(PatientRepository patientRepository, BillingServiceGrpcClient billingServiceGrpcClient,KafkaProducer kafkaProducer) {
         this.patientRepository = patientRepository;
         this.billingServiceGrpcClient = billingServiceGrpcClient;
         this.kafkaProducer = kafkaProducer;
-        this.streamKafkaProducer = streamKafkaProducer;
+       // this.streamKafkaProducer = streamKafkaProducer;
     }
 
     /**
@@ -150,10 +148,10 @@ public class PatientService {
         Patient patient = patientRepository.save(PatientMapper.toPatientEntity(patientRequestDTO));
 
         if(patient.getId() != null){
-            //billingServiceGrpcClient.createBillingAccount(patient.getId().toString(),patient.getName(),patient.getEmail());
+            billingServiceGrpcClient.createBillingAccount(patient.getId().toString(),patient.getName(),patient.getEmail());
 
-            //kafkaProducer.sendPatientCreatedEvent(patient);
-            streamKafkaProducer.sendPatientCreatedEvent(patient);
+            kafkaProducer.sendPatientCreatedEvent(patient);
+            //streamKafkaProducer.sendPatientCreatedEvent(patient);
         }
 
         return PatientMapper.toPatientResponseDTO(patient);

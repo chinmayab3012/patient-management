@@ -5,6 +5,8 @@ import billing.BillingResponse;
 import billing.BillingServiceGrpc;
 import com.pm.patientservice.exception.BillingServiceException;
 import com.pm.patientservice.kafka.KafkaProducer;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.retry.annotation.Retry;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
@@ -53,8 +55,8 @@ public class BillingServiceGrpcClient {
                .build();
    }
 
-   //@CircuitBreaker(name = "billingService",fallbackMethod = "billingFallback")
-   //@Retry(name="billingRetry")
+   @CircuitBreaker(name = "billingService",fallbackMethod = "billingFallback")
+   @Retry(name="billingRetry")
    public BillingResponse createBillingAccount(String patientId, String name, String email){
        BillingRequest billingRequest = BillingRequest.newBuilder()
                .setPatientId(patientId)

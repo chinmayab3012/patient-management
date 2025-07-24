@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79332b26-3d4b-4ffa-a5e5-916d2f2bfc03" name="Changes" comment="22-07 localstack setup">
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics-service/src/main/java/com/pm/analyticsservice/kafka/PatientCreatedEventReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-service/src/main/java/com/pm/analyticsservice/kafka/PatientCreatedEventReceiver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analytics-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics-service/src/test/java/com/pm/analyticsservice/AnalyticsServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/cdk.out/cdk.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/cdk.out/localstack.template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/cdk.out/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/cdk.out/tree.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/pm/stack/LocalStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/target/classes/com/pm/stack/LocalStack.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/grpc/BillingServiceGrpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/grpc/BillingServiceGrpcClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/kafka/StreamKafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/kafka/StreamKafkaProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -62,46 +55,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.LocalStack.executor": "Run",
-    "Application.NotificationMedicineApplication.executor": "Run",
-    "Docker.analytics-service.executor": "Run",
-    "Docker.api-gateway.executor": "Run",
-    "Docker.auth-service-db.executor": "Run",
-    "Docker.auth-service.executor": "Run",
-    "Docker.billing-service-db.executor": "Run",
-    "Docker.billing-service.executor": "Run",
-    "Docker.grafana.executor": "Run",
-    "Docker.kafka-ui.executor": "Run",
-    "Docker.kafka.executor": "Run",
-    "Docker.notification-o-service.executor": "Run",
-    "Docker.notification-service.executor": "Run",
-    "Docker.order-medcine-service.executor": "Run",
-    "Docker.patient-service-db.executor": "Run",
-    "Docker.patient-service.executor": "Run",
-    "Docker.prometheus.executor": "Run",
-    "Docker.redis.executor": "Run",
-    "JUnit.PatientIntegrationTest.shouldReturn429AfterLimitExceeded.executor": "Run",
-    "JUnit.PatientIntegrationTest.shouldReturnPatientsWithValidToken.executor": "Run",
-    "Maven.analytics-service [clean].executor": "Run",
-    "Maven.analytics-service [compile].executor": "Run",
-    "Maven.billing-service [clean].executor": "Run",
-    "Maven.billing-service [compile].executor": "Run",
-    "Maven.patient-service [compile].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/patient-management/notification-o-service",
-    "onboarding.tips.debug.path": "D:/patient-management/infrastructure/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "terminal"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LocalStack.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NotificationMedicineApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.analytics-service.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.api-gateway.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.auth-service-db.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.auth-service.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.billing-service-db.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.billing-service.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.grafana.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.kafka-ui.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.kafka.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.notification-o-service.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.notification-service.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.order-medcine-service.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.patient-service-db.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.patient-service.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.prometheus.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.redis.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PatientIntegrationTest.shouldReturn429AfterLimitExceeded.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PatientIntegrationTest.shouldReturnPatientsWithValidToken.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.analytics-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.analytics-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.billing-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.billing-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.patient-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/patient-management/notification-o-service&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/patient-management/infrastructure/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\patient-management\notification-o-service" />
