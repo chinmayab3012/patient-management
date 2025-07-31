@@ -183,6 +183,8 @@ public class PatientService {
         Patient updatedPatient = PatientMapper.updatePatientEntity(patient, patientRequestDTO);
         updatedPatient= patientRepository.save(updatedPatient);
 
+        kafkaProducer.sendPatientUpdatedEvent(updatedPatient);
+
         return  PatientMapper.toPatientResponseDTO(updatedPatient);
     }
 

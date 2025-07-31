@@ -16,7 +16,7 @@
             </DockerEnvVarImpl>
             <DockerEnvVarImpl>
               <option name="name" value="KAFKA_TOPIC_PATIENT_CREATE" />
-              <option name="value" value="patient" />
+              <option name="value" value="patient.created" />
             </DockerEnvVarImpl>
             <DockerEnvVarImpl>
               <option name="name" value="SPRING_CACHE_TYPE" />

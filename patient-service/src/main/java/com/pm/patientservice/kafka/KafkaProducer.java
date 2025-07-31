@@ -13,6 +13,7 @@ import patient.events.PatientEvent;
 public class KafkaProducer {
     private static final Logger log = LoggerFactory.getLogger(KafkaProducer.class);
     private static final String EVENT_TYPE_PATIENT_CREATED = "PATIENT_CREATED";
+    private static final String EVENT_TYPE_PATIENT_UPDATED = "PATIENT_UPDATED";
     public static final String BILLING_ACCOUNT_CREATE_REQUESTED = "BILLING_ACCOUNT_CREATE_REQUESTED";
     /**
      * A KafkaTemplate instance used for sending messages to a Kafka topic.
@@ -21,7 +22,7 @@ public class KafkaProducer {
      * This instance is final, ensuring it is immutable after initialization.
      */
     private final KafkaTemplate<String, byte[]> kafkaTemplate;
-    @Value("${kafka.topic.patient.create:patient}")
+    @Value("${kafka.topic.patient.create:patient.created}")
     String patientEventsTopic;
 
     public KafkaProducer(KafkaTemplate<String, byte[]> kafkaTemplate) {
@@ -44,6 +45,21 @@ public class KafkaProducer {
             PatientEvent patientEvent = buildPatientEvent(patient, EVENT_TYPE_PATIENT_CREATED);
 
             kafkaTemplate.send(patientEventsTopic, patientEvent.toByteArray());
+        } catch (KafkaException ke) {
+            log.error("Kafka error while sending patient created event for patient ID: {}",
+                    patient.getId(), ke);
+        } catch (Exception e) {
+            log.error("Unexpected error while sending patient created event for patient ID: {}",
+                    patient.getId(), e);
+        }
+    }
+
+    public void sendPatientUpdatedEvent
+            (Patient patient) {
+        try {
+            PatientEvent patientEvent = buildPatientEvent(patient, EVENT_TYPE_PATIENT_UPDATED);
+
+            kafkaTemplate.send("patient.updated", patientEvent.toByteArray());
         } catch (KafkaException ke) {
             log.error("Kafka error while sending patient created event for patient ID: {}",
                     patient.getId(), ke);
