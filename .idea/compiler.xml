@@ -9,6 +9,7 @@
         <module name="order-medicine-service" />
         <module name="auth-service" />
         <module name="appointment-service" />
+        <module name="doctor-service" />
         <module name="api-gateway" />
         <module name="analytics-service" />
         <module name="patient-service" />
@@ -28,6 +29,7 @@
       <module name="appointment-service" options="-parameters" />
       <module name="auth-service" options="-parameters" />
       <module name="billing-service" options="-parameters" />
+      <module name="doctor-service" options="-parameters" />
       <module name="notification-o-service" options="-parameters" />
       <module name="order-medicine-service" options="-parameters" />
       <module name="patient-service" options="-parameters" />

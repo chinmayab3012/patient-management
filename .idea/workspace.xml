@@ -4,27 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79332b26-3d4b-4ffa-a5e5-916d2f2bfc03" name="Changes" comment="24-07 stream kafka poc">
-      <change afterPath="$PROJECT_DIR$/appointment-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/controller/AppointmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/dto/PagedAppointmentResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/entity/CachedPatient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/kafka/KafkaConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/repository/AppointmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/repository/CachedPatientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/service/AppointmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/proto/patient_event.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/resources/data.sql" afterDir="false" />
+    <list default="true" id="79332b26-3d4b-4ffa-a5e5-916d2f2bfc03" name="Changes" comment="11-08: doctor api with api gateway">
+      <change afterPath="$PROJECT_DIR$/doctor-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/DoctorServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/controller/DoctorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/dto/DoctorRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/dto/DoctorResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/dto/PagedDoctorResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/dto/StandardErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/dto/ValidationError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/entity/Doctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/exception/EmailAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/exception/EmailPhoneAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/exception/PhoneAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/mapper/DoctorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/repository/DoctorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/service/DoctorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/proto/doctor_event.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/LocalStack.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/patient_service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/patient_service.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/kafka/KafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/kafka/KafkaProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/pm/patientservice/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/AppointmentServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/AppointmentServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/controller/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/controller/AppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/dto/AppointmentRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/dto/AppointmentRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/dto/AppointmentResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/dto/AppointmentResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/dto/PagedAppointmentResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/dto/PagedAppointmentResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/entity/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/entity/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/entity/CachedPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/entity/CachedPatient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/kafka/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/kafka/KafkaConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/repository/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/repository/AppointmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/repository/CachedPatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/repository/CachedPatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/service/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/service/AppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration-tests/target/test-classes/AuthIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/integration-tests/target/test-classes/AuthIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration-tests/target/test-classes/PatientIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/integration-tests/target/test-classes/PatientIntegrationTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +58,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -85,6 +110,8 @@
     &quot;Docker.auth-service.executor&quot;: &quot;Run&quot;,
     &quot;Docker.billing-service-db.executor&quot;: &quot;Run&quot;,
     &quot;Docker.billing-service.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.doctor-service-db.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.doctor-service.executor&quot;: &quot;Run&quot;,
     &quot;Docker.grafana.executor&quot;: &quot;Run&quot;,
     &quot;Docker.kafka-ui.executor&quot;: &quot;Run&quot;,
     &quot;Docker.kafka.executor&quot;: &quot;Run&quot;,
@@ -103,12 +130,14 @@
     &quot;Maven.appointment-service [compile].executor&quot;: &quot;Run&quot;,
     &quot;Maven.billing-service [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.billing-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.doctor-service [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.patient-service [compile].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/patient-management/patient-service/src/test/java&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/patient-management/appointment-service/src/main/proto&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;D:/patient-management/infrastructure/src/main/java/org/example/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
@@ -128,7 +157,7 @@
       <recent name="D:\patient-management\patient-service\src\main\java\com\pm\patientservice\kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.appointment-service">
+  <component name="RunManager" selected="Docker.api-gateway">
     <configuration name="Hash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.learn.Hash" />
       <module name="java" />
@@ -306,8 +335,94 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="doctor-service-db" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="postgres:13-alpine" />
+          <option name="containerName" value="doctor-service-db" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_DB" />
+                <option name="value" value="doctor-service-db" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_USER" />
+                <option name="value" value="admin" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="5432" />
+                <option name="hostPort" value="5020" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="/var/lib/postgresql/data" />
+                <option name="hostPath" value="D:\learning\patient-management\db_volume\doctor-service\" />
+              </DockerVolumeBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="doctor-service" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="doctor-service:latest" />
+          <option name="containerName" value="doctor-service" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_URL" />
+                <option name="value" value="jdbc:postgresql://doctor-service-db:5432/doctor-service-db" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATASOURCE_USERNAME" />
+                <option name="value" value="admin" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_JPA_HIBERNATE_DDL_AUTO" />
+                <option name="value" value="update" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_SQL_INIT_MODE" />
+                <option name="value" value="always" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="4015" />
+                <option name="hostPort" value="4015" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network internal" />
+          <option name="sourceFilePath" value="doctor-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Hash" />
+      <item itemvalue="Docker.doctor-service" />
       <item itemvalue="Docker.order-medcine-service" />
       <item itemvalue="Docker.appointment-service" />
       <item itemvalue="Docker.notification-service" />
@@ -324,6 +439,7 @@
       <item itemvalue="Docker.prometheus" />
       <item itemvalue="Docker.grafana" />
       <item itemvalue="Docker.patient-service-db" />
+      <item itemvalue="Docker.doctor-service-db" />
       <item itemvalue="Docker.billing-service-db" />
       <item itemvalue="Docker.pgadmin" />
       <item itemvalue="Java Scratch.Unnamed" />
@@ -394,7 +510,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753357743039</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="31-07 appointment service">
+      <option name="closed" value="true" />
+      <created>1753966821811</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1753966821811</updated>
+    </task>
+    <task id="LOCAL-00008" summary="08-08: patient controller test with junit and mockito">
+      <option name="closed" value="true" />
+      <created>1754637601656</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1754637601656</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -421,7 +553,10 @@
     <MESSAGE value="21-07 stream api" />
     <MESSAGE value="22-07 localstack setup" />
     <MESSAGE value="24-07 stream kafka poc" />
-    <option name="LAST_COMMIT_MESSAGE" value="24-07 stream kafka poc" />
+    <MESSAGE value="31-07 appointment service" />
+    <MESSAGE value="08-08: patient controller test with junit and mockito" />
+    <MESSAGE value="11-08: doctor api with api gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="11-08: doctor api with api gateway" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

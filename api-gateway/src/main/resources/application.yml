@@ -32,6 +32,15 @@ spring:
             - StripPrefix=1
             - JwtValidation
 
+        # Rote for /api/doctors/** to doctor-service
+        - id: doctor-service-route
+          uri: http://doctor-service:4015
+          predicates:
+            - Path=/api/doctor/**
+          filters:
+              - StripPrefix=1
+              - JwtValidation
+
         # Route for /api/docs/patients to patient-service /v3/api-docs
         - id: api-docs-patient-route
           uri: http://patient-service:4000
