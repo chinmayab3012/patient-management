@@ -10,6 +10,8 @@ import com.pm.doctorservice.exception.PhoneAlreadyExistException;
 import com.pm.doctorservice.mapper.DoctorMapper;
 import com.pm.doctorservice.repository.DoctorRepository;
 import jakarta.transaction.Transactional;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -28,6 +30,7 @@ public class DoctorService {
         this.doctorRepository = doctorRepository;
     }
 
+    @CacheEvict(value = "doctor", allEntries = true) // Evict all entries from "doctor" cache
     @Transactional(value = Transactional.TxType.REQUIRED, rollbackOn = Exception.class)
     public DoctorResponseDTO createDoctor(DoctorRequestDTO doctorRequestDTO) {
         //check if doctor exist with email or phone
@@ -47,9 +50,13 @@ public class DoctorService {
         return DoctorMapper.doctorToDoctorResponseDto(doctor);
     }
 
-    public PagedDoctorResponseDto getDoctors(int page,int size,String sortValue,String sortField){
+    @Cacheable(
+            value="doctor",
+            key = "#page + '-' + #size + '-' + #sort + '-' + #sortField"
+    )
+    public PagedDoctorResponseDto getDoctors(int page,int size,String sort,String sortField){
         Pageable pageable = PageRequest.of(page - 1, size,
-                sortValue.equalsIgnoreCase("desc") ? Sort.by(sortField).descending()
+                sort.equalsIgnoreCase("desc") ? Sort.by(sortField).descending()
                         : Sort.by(sortField).ascending());
 
         Page<Doctor> doctorPage = doctorRepository.findAll(pageable);

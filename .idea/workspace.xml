@@ -5,50 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79332b26-3d4b-4ffa-a5e5-916d2f2bfc03" name="Changes" comment="11-08: doctor api with api gateway">
-      <change afterPath="$PROJECT_DIR$/doctor-service/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/DoctorServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/controller/DoctorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/dto/DoctorRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/dto/DoctorResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/dto/PagedDoctorResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/dto/StandardErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/dto/ValidationError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/entity/Doctor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/exception/EmailAlreadyExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/exception/EmailPhoneAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/exception/PhoneAlreadyExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/mapper/DoctorMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/repository/DoctorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/service/DoctorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/proto/doctor_event.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/cache/RedisCacheConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/AppointmentServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/AppointmentServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/controller/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/controller/AppointmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/dto/AppointmentRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/dto/AppointmentRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/dto/AppointmentResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/dto/AppointmentResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/dto/PagedAppointmentResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/dto/PagedAppointmentResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/entity/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/entity/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/entity/CachedPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/entity/CachedPatient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/kafka/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/kafka/KafkaConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/repository/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/repository/AppointmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/repository/CachedPatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/repository/CachedPatientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/appointment_service/service/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/pm/doctorservice/service/AppointmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integration-tests/target/test-classes/AuthIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/integration-tests/target/test-classes/AuthIntegrationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integration-tests/target/test-classes/PatientIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/integration-tests/target/test-classes/PatientIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/pm/authservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctor-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/doctor-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/pm/doctorservice/service/DoctorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctor-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/doctor-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,8 +118,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\patient-management\patient-service\src\main\java\com\pm\patientservice\kafka" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pm.doctorservice.cache" />
+    </key>
   </component>
-  <component name="RunManager" selected="Docker.api-gateway">
+  <component name="RunManager" selected="Docker.doctor-service">
     <configuration name="Hash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.learn.Hash" />
       <module name="java" />
@@ -385,6 +350,18 @@
           <option name="envVars">
             <list>
               <DockerEnvVarImpl>
+                <option name="name" value="SPRING_CACHE_TYPE" />
+                <option name="value" value="redis" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATA_REDIS_HOST" />
+                <option name="value" value="redis" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SPRING_DATA_REDIS_PORT" />
+                <option name="value" value="6379" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
                 <option name="name" value="SPRING_DATASOURCE_PASSWORD" />
                 <option name="value" value="password" />
               </DockerEnvVarImpl>
@@ -526,7 +503,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754637601656</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="11-08: doctor api with api gateway">
+      <option name="closed" value="true" />
+      <created>1754911257869</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1754911257869</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
